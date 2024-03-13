@@ -4,6 +4,7 @@ import streamlit as st  # Streamlit library for creating web apps
 from openai import OpenAI  # New import for OpenAI client
 
 # Instantiate the OpenAI client with the API key from Streamlit secrets
+# the OPENAI_API_KEY is an environment varible. It needs to be set with "export OPENAI_API_KEY=your_api_key_here"
 client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 
